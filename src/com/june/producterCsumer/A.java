@@ -46,6 +46,7 @@ public class A {
         private int number = 0;
         //+1
         public synchronized void increment() throws InterruptedException {
+            //防止虚假唤醒
             while (number != 0) {
                 this.wait();
             }
