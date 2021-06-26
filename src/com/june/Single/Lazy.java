@@ -3,6 +3,7 @@ package com.june.Single;
 import java.util.LinkedHashMap;
 
 public class Lazy {
+//    初始化
     private Lazy(){
         System.out.println(Thread.currentThread().getName()+">>>");
     }

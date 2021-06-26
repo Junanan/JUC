@@ -5,7 +5,7 @@ import java.util.concurrent.*;
 
 public class demo1 {
     public static void main(String[] args) {
-        //Executors工具类 , 3大方法
+        //Executors工具类 , 三大方法
 //        ExecutorService threadPool = Executors.newSingleThreadExecutor(); //单个线程
 //       ExecutorService threadPool = Executors.newFixedThreadPool(5); //固定线程池
 //        ExecutorService threadPool = Executors.newCachedThreadPool(); //可变化大小，伸缩
