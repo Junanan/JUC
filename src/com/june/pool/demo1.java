@@ -1,5 +1,7 @@
 package com.june.pool;
 
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.concurrent.*;
 
 
@@ -7,7 +9,7 @@ public class demo1 {
     public static void main(String[] args) {
         //Executors工具类 , 三大方法
 //        ExecutorService threadPool = Executors.newSingleThreadExecutor(); //单个线程
-//       ExecutorService threadPool = Executors.newFixedThreadPool(5); //固定线程池
+//        ExecutorService threadPool = Executors.newFixedThreadPool(5); //固定线程池
 //        ExecutorService threadPool = Executors.newCachedThreadPool(); //可变化大小，伸缩
         //四个拒绝策略
 //        new ThreadPoolExecutor.AbortPolicy()  队列满了丢任务，抛出异常
@@ -17,7 +19,6 @@ public class demo1 {
         //如何设置最大线程数
         //cpu密集型：max = CPU个数
         //io密集型: max = io任务数
-
         //ThreadPoolExecutor 有7个参数
         ThreadPoolExecutor threadPool = new ThreadPoolExecutor(
                     2,//核心窗口
